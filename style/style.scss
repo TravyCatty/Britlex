@@ -1,0 +1,44 @@
+$lato: "Lato", sans-serif;
+$crimson: "Crimson Pro", serif;
+body {
+    overflow: hidden;
+    font-family: "Crimson Pro", serif;
+    font-family: "Lato", sans-serif;
+}
+.wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 30px 10px 0 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+    }
+    .nav__list {
+        display: flex;
+        gap: 30px;
+
+        margin-right: 20em;
+
+        align-items: center;
+        .nav__link {
+            font-family: $lato;
+            font-weight: bold;
+
+            font-size: 16px;
+
+            color: #000;
+            &-active {
+                color: #f16214;
+            }
+            &-button {
+                color: #fff;
+                background: #f16214;
+                padding: 0.5em 1em;
+                border-radius: 120px;
+            }
+        }
+    }
+}

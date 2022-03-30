@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  overflow: hidden;
+  font-family: "Crimson Pro", serif;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px 10px 0 10px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-right: 20em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav__list .nav__link {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+.nav .nav__list .nav__link-active {
+  color: #f16214;
+}
+
+.nav .nav__list .nav__link-button {
+  color: #fff;
+  background: #f16214;
+  padding: 0.5em 1em;
+  border-radius: 120px;
+}
+/*# sourceMappingURL=style.css.map */
