@@ -1,0 +1,136 @@
+$main-color: #263238;
+$second-color: #8f95a5;
+body {
+    font-family: "Poppins", sans-serif;
+}
+* {
+    transition: 0.3s;
+}
+.header {
+    padding-top: 50px;
+    width: 100%;
+}
+.wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+//Navigation
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .burger {
+        display: none;
+    }
+    .logo {
+        font-size: 2em;
+        color: #000;
+        &-grey {
+            color: $main-color;
+        }
+    }
+    &__list {
+        display: flex;
+        gap: 2em;
+    }
+    &__item {
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+    &__link {
+        color: #263238;
+
+        font-size: 1.25em;
+
+        &:hover {
+            color: $second-color;
+        }
+    }
+    &__button {
+        justify-self: end;
+        // 24px = 1.5em
+        font-size: 1.5em;
+
+        color: $main-color;
+
+        border: 2px solid $main-color;
+        border-radius: 5px;
+
+        padding: 0.5em 2em;
+
+        &:hover {
+            color: $second-color;
+            border: 2px solid $second-color;
+            scale: 1.1;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .nav {
+        .logo {
+            font-size: 1.8em;
+        }
+        &__link {
+            font-size: 1em;
+        }
+        &__button {
+            font-size: 1.125em;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .nav {
+            justify-content: space-between;
+            .burger-active {
+                display: block;
+                width: 48px;
+                height: 48px;
+                cursor: pointer;
+
+                background-image: url(../images/bugreg-ico.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            &__list {
+                display: none;
+            }
+            &__button {
+                display: none;
+            }
+        }
+    }
+}
+
+// header text block
+.header-main {
+    display: flex;
+    justify-content: space-between; 
+    .header-text-block {
+        .title-text {
+            display: flex;
+            &__title {
+                font-size: 4em;
+            }
+            &__img {
+                align-self: flex-end;
+            }
+        }
+        &__subtitle {
+        }
+        &__button {
+        }
+    }
+    .header-img {
+        width: 600px;
+        height: 600px;
+
+
+        background-image: url(../images/languages-girl.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

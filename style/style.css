@@ -1,0 +1,151 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .burger {
+  display: none;
+}
+
+.nav .logo {
+  font-size: 2em;
+  color: #000;
+}
+
+.nav .logo-grey {
+  color: #263238;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+
+.nav__item:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.nav__link {
+  color: #263238;
+  font-size: 1.25em;
+}
+
+.nav__link:hover {
+  color: #8f95a5;
+}
+
+.nav__button {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-size: 1.5em;
+  color: #263238;
+  border: 2px solid #263238;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+}
+
+.nav__button:hover {
+  color: #8f95a5;
+  border: 2px solid #8f95a5;
+  scale: 1.1;
+}
+
+@media (max-width: 992px) {
+  .nav .logo {
+    font-size: 1.8em;
+  }
+  .nav__link {
+    font-size: 1em;
+  }
+  .nav__button {
+    font-size: 1.125em;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 767px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav .burger-active {
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background-image: url(../images/bugreg-ico.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__button {
+    display: none;
+  }
+}
+
+.header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-main .header-text-block .title-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-main .header-text-block .title-text__title {
+  font-size: 4em;
+}
+
+.header-main .header-text-block .title-text__img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.header-main .header-img {
+  width: 600px;
+  height: 600px;
+  background-image: url(../images/languages-girl.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
