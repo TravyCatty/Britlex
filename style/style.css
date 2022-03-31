@@ -116,36 +116,130 @@ body {
   }
 }
 
-.header-main {
+.text-block {
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: minmax(1fr, 1fr);
+      grid-template-rows: minmax(1fr, 1fr);
+  gap: 50px;
+}
+
+.text-block .left-aside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(1fr, 540px);
+      grid-template-columns: minmax(1fr, 540px);
+  gap: 40px;
+}
+
+.text-block .left-aside__title-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 2em;
 }
 
-.header-main .header-text-block .title-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.text-block .left-aside__subtitle {
+  font-size: 1.5em;
+  color: #8f95a5;
+  max-width: 520px;
+  line-height: 36px;
 }
 
-.header-main .header-text-block .title-text__title {
+.text-block .left-aside__button {
+  font-size: 2em;
+  color: #fff;
+  background-color: #263238;
+  padding: 1em 3.25em;
+  border-radius: 15px;
+  max-width: 340px;
+}
+
+.text-block .title-block__title {
   font-size: 4em;
+  color: #000;
+  font-weight: 600;
 }
 
-.header-main .header-text-block .title-text__img {
+.text-block .title-block__img {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  width: 90px;
+  height: 90px;
 }
 
-.header-main .header-img {
-  width: 600px;
-  height: 600px;
+.text-block .right-img {
+  width: 100%;
   background-image: url(../images/languages-girl.png);
   background-size: contain;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .text-block {
+    margin-top: 75px;
+  }
+  .text-block .left-aside {
+    gap: 30px;
+  }
+  .text-block .left-aside__title-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+  }
+  .text-block .left-aside__subtitle {
+    font-size: 1.25em;
+    line-height: 30px;
+  }
+  .text-block .left-aside__button {
+    font-size: 1.5em;
+    max-width: 260px;
+  }
+  .text-block .title-block__title {
+    font-size: 3em;
+    color: #000;
+    font-weight: 600;
+  }
+  .text-block .title-block__img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-block {
+    margin-top: 50px;
+  }
+  .text-block .left-aside {
+    gap: 30px;
+  }
+  .text-block .left-aside__title-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+  }
+  .text-block .left-aside__subtitle {
+    font-size: 1em;
+    line-height: 24px;
+  }
+  .text-block .left-aside__button {
+    font-size: 1em;
+    max-width: 170px;
+  }
+  .text-block .title-block__title {
+    font-size: 2em;
+    color: #000;
+    font-weight: 600;
+  }
+  .text-block .title-block__img {
+    width: 50px;
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

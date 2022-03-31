@@ -105,32 +105,127 @@ body {
 }
 
 // header text block
-.header-main {
-    display: flex;
-    justify-content: space-between; 
-    .header-text-block {
-        .title-text {
+.text-block {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(1fr, 1fr);
+
+    gap: 50px;
+    .left-aside {
+        display: grid;
+        grid-template-columns: minmax(1fr, 540px);
+
+        gap: 40px;
+        &__title-block {
             display: flex;
-            &__title {
-                font-size: 4em;
-            }
-            &__img {
-                align-self: flex-end;
-            }
+            gap: 2em;
         }
         &__subtitle {
+            font-size: 1.5em;
+            color: $second-color;
+            max-width: 520px;
+            line-height: 36px;
         }
         &__button {
+            font-size: 2em;
+
+            color: #fff;
+            background-color: $main-color;
+
+            padding: 1em 3.25em;
+
+            border-radius: 15px;
+
+            max-width: 340px;
         }
     }
-    .header-img {
-        width: 600px;
-        height: 600px;
+    .title-block {
+        &__title {
+            font-size: 4em;
 
+            color: #000;
+            font-weight: 600;
+        }
+        &__img {
+            align-self: flex-end;
+            width: 90px;
+            height: 90px;
+        }
+    }
 
+    .right-img {
+        width: 100%;
         background-image: url(../images/languages-girl.png);
         background-size: contain;
-        background-position: center;
+        background-position: 50% 50%;
         background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-block {
+        margin-top: 75px;
+        .left-aside {
+            gap: 30px;
+            &__title-block {
+                display: flex;
+                gap: 2em;
+            }
+            &__subtitle {
+                font-size: 1.25em;
+                line-height: 30px;
+            }
+            &__button {
+                font-size: 1.5em;
+
+                max-width: 260px;
+            }
+        }
+        .title-block {
+            &__title {
+                font-size: 3em;
+
+                color: #000;
+                font-weight: 600;
+            }
+            &__img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .text-block {
+        margin-top: 50px;
+        .left-aside {
+            gap: 30px;
+            &__title-block {
+                display: flex;
+                gap: 2em;
+            }
+            &__subtitle {
+                font-size: 1em;
+                line-height: 24px;
+            }
+            &__button {
+                font-size: 1em;
+
+                max-width: 170px;
+            }
+        }
+        .title-block {
+            &__title {
+                font-size: 2em;
+
+                color: #000;
+                font-weight: 600;
+            }
+            &__img {
+                width: 50px;
+                height: 50px;
+            }
+        }
     }
 }
