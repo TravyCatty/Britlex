@@ -142,6 +142,10 @@ body {
             border-radius: 15px;
 
             max-width: 340px;
+
+            &:hover{
+                background: #3c4f58;
+            }
         }
     }
     .title-block {
@@ -527,6 +531,10 @@ body {
 
         max-width: 150px;
         text-align: center;
+
+        &:hover{
+            background: #3c4f58;
+        }
     }
 }
 

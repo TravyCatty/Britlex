@@ -164,6 +164,10 @@ body {
   max-width: 340px;
 }
 
+.text-block .left-aside__button:hover {
+  background: #3c4f58;
+}
+
 .text-block .title-block__title {
   font-size: 4em;
   color: #000;
@@ -419,6 +423,10 @@ body {
   border-radius: 5px;
   max-width: 150px;
   text-align: center;
+}
+
+.skills-card__button:hover {
+  background: #3c4f58;
 }
 
 @media (max-width: 992px) {
