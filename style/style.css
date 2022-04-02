@@ -422,6 +422,12 @@ body {
 }
 
 @media (max-width: 992px) {
+  .skills {
+    margin-top: 50px;
+  }
+  .skills-grid {
+    margin-top: 50px;
+  }
   .title {
     font-size: 2em;
   }
@@ -447,6 +453,41 @@ body {
   }
   .grid-1 .skills-card-text {
     gap: 2em;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    margin-top: 40px;
+  }
+  .skills-grid {
+    margin-top: 40px;
+  }
+  .title {
+    font-size: 1.7em;
+  }
+  .skills-card__img {
+    width: 100%;
+    max-height: 130px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-bottom: 20px;
+  }
+  .skills-card__title {
+    font-size: 1em;
+  }
+  .skills-card__subtitle {
+    font-size: 0.6em;
+  }
+  .skills-card__button {
+    font-size: 0.8em;
+  }
+  .skills-card-text {
+    line-height: 14px;
+    gap: 15px;
+  }
+  .grid-1 .skills-card-text {
+    gap: 1.3em;
   }
 }
 /*# sourceMappingURL=style.css.map */
