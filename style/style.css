@@ -318,40 +318,38 @@ body {
 }
 
 .skills {
-  margin-top: 110px;
+  margin-top: 120px;
 }
 
-.skills .title {
+.title {
   font-size: 3em;
   font-weight: 600;
   color: #000;
   text-align: center;
 }
 
-.skills .skills-grid {
+.skills-grid {
+  margin-top: 90px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr 260px;
-      grid-template-rows: 1fr 260px;
+  -ms-grid-rows: minmax(1fr, 300px);
+      grid-template-rows: minmax(1fr, 300px);
   gap: 20px;
 }
 
-.skills .skills-grid__card {
+.skills-grid__card {
   background: #f5f5f5;
   border-radius: 10px;
-  padding: 2em 3em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center;
 }
 
-.skills .grid-1 {
+.grid-1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 2;
@@ -360,26 +358,27 @@ body {
   grid-row-end: 3;
 }
 
-.skills .grid-4 {
+.grid-1 .skills-card-text {
+  gap: 3em;
+}
+
+.grid-4 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
 
-.skills .grid-4 .skills-card__img {
+.grid-4 img {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.skills .skills-card-text {
+.skills-card-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,28 +387,30 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  font-size: 1.2em;
+  text-align: start;
   line-height: 24px;
 }
 
-.skills .skills-card__img {
-  margin-bottom: 40px;
-  max-width: 100%;
-  max-height: 150px;
+.skills-card__img {
+  width: 100%;
+  max-height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin-bottom: 30px;
 }
 
-.skills .skills-card__title {
+.skills-card__title {
   font-size: 2em;
   color: #263238;
 }
 
-.skills .skills-card__subtitle {
+.skills-card__subtitle {
   font-size: 1em;
   color: #8f95a5;
 }
 
-.skills .skills-card__button {
+.skills-card__button {
   font-size: 1rem;
   color: #fff;
   background-color: #263238;
