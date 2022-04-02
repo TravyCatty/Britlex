@@ -7,13 +7,13 @@ body {
     transition: 0.3s;
 }
 .header {
-    padding-top: 50px;
+    padding-top: 20px;
     width: 100%;
 }
 .wrapper {
     max-width: 1350px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 //Navigation
 .nav {
@@ -67,6 +67,7 @@ body {
         }
     }
 }
+//Navigation 992px
 @media (max-width: 992px) {
     .nav {
         .logo {
@@ -79,27 +80,27 @@ body {
             font-size: 1.125em;
         }
     }
+}
+//Navigation 767px
+@media (max-width: 767px) {
+    .nav {
+        justify-content: space-between;
+        .burger-active {
+            display: block;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
 
-    @media (max-width: 767px) {
-        .nav {
-            justify-content: space-between;
-            .burger-active {
-                display: block;
-                width: 48px;
-                height: 48px;
-                cursor: pointer;
-
-                background-image: url(../images/bugreg-ico.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-            }
-            &__list {
-                display: none;
-            }
-            &__button {
-                display: none;
-            }
+            background-image: url(../images/bugreg-ico.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        &__list {
+            display: none;
+        }
+        &__button {
+            display: none;
         }
     }
 }
@@ -119,7 +120,7 @@ body {
         gap: 40px;
         &__title-block {
             display: flex;
-            gap: 2em;
+            justify-content:flex-start;
         }
         &__subtitle {
             font-size: 1.5em;
@@ -143,9 +144,9 @@ body {
     .title-block {
         &__title {
             font-size: 4em;
-
             color: #000;
             font-weight: 600;
+            line-height: 80px;
         }
         &__img {
             align-self: flex-end;
@@ -185,6 +186,7 @@ body {
         .title-block {
             &__title {
                 font-size: 3em;
+                line-height: 60px;
 
                 color: #000;
                 font-weight: 600;
@@ -211,13 +213,13 @@ body {
             }
             &__button {
                 font-size: 1em;
-
                 max-width: 170px;
             }
         }
         .title-block {
             &__title {
                 font-size: 2em;
+                line-height: 45px;
 
                 color: #000;
                 font-weight: 600;
@@ -227,5 +229,60 @@ body {
                 height: 50px;
             }
         }
+    }
+}
+@media (max-width: 575px) {
+    .text-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: 312px 1fr;
+        grid-auto-flow: column;
+        margin-top: 10px;
+        gap: 20px;
+        .left-aside {
+            order: 2;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .title-block {
+            &__title {
+                text-align: center;
+            }
+            &__img {
+                display: none;
+            }
+        }
+        .right-img {
+            width: 100%;
+            background-image: url(../images/languages-girl.png);
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            order: 1;
+        }
+    }
+}
+@media (max-width: 400px) {
+    
+    .text-block {
+        grid-template-rows: 220px 1fr;
+       
+        .left-aside {
+            &__button {
+                width: 100%;
+                max-width: 320px;
+            }
+            .title-block{
+                &__title {
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+    .title-block {
+        justify-content: center;
+        font-size: 0.85em;
     }
 }
