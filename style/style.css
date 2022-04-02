@@ -528,4 +528,39 @@ body {
             order: 2;
   }
 }
+
+@media (max-width: 400px) {
+  .skills-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .skills-card-text {
+    gap: 1em;
+  }
+  .grid-1 {
+    display: block;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .grid-1 .skills-card-text {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0.5em;
+  }
+  .grid-3 {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .grid-4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */
