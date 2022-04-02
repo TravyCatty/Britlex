@@ -316,4 +316,36 @@ body {
 .skills {
   margin-top: 110px;
 }
+
+.skills .title {
+  font-size: 3em;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.skills .skills-grid {
+  margin-top: 120px;
+}
+
+.skills .skills-grid__card {
+  background: #F5F5F5;
+}
+
+.skills .skills-card__title {
+  font-size: 2em;
+  color: #263238;
+}
+
+.skills .skills-card__subtitle {
+  font-size: 1em;
+  color: #8f95a5;
+}
+
+.skills .skills-card__button {
+  color: #fff;
+  background-color: #263238;
+  padding: 1em 3em;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=style.css.map */

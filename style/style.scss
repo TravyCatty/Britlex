@@ -120,7 +120,7 @@ body {
         gap: 40px;
         &__title-block {
             display: flex;
-            justify-content:flex-start;
+            justify-content: flex-start;
         }
         &__subtitle {
             font-size: 1.5em;
@@ -265,16 +265,15 @@ body {
     }
 }
 @media (max-width: 400px) {
-    
     .text-block {
         grid-template-rows: 220px 1fr;
-       
+
         .left-aside {
             &__button {
                 width: 100%;
                 max-width: 320px;
             }
-            .title-block{
+            .title-block {
                 &__title {
                     line-height: 36px;
                 }
@@ -290,4 +289,52 @@ body {
 // skills
 .skills {
     margin-top: 110px;
+
+    .title {
+        font-size: 3em;
+        font-weight: 600;
+        color: #000;
+        text-align: center;
+    }
+    .skills-grid {
+        // .skills-grid__card
+        margin-top: 120px;
+
+        &__card {
+            background: #F5F5F5;
+        }
+    }
+    .skills-card {
+        // .skills-card__img
+
+        &__img {
+        }
+
+        // .skills-card__title
+
+        &__title {
+            font-size: 2em;
+
+            color: $main-color;
+        }
+
+        // .skills-card__subtitle
+
+        &__subtitle {
+            font-size: 1em;
+
+            color: $second-color;
+        }
+
+        // .skills-card__button
+
+        &__button {
+            color: #fff;
+            background-color: $main-color;
+
+            padding: 1em 3em;
+
+            border-radius: 5px;
+        }
+    }
 }
