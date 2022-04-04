@@ -706,10 +706,13 @@ body {
     .about-main-flex {
         display: flex;
         justify-content: space-between;
+        gap: 30px;
         .about-text-block {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+            flex: 1 1 0;
 
             max-width: 600px;
             .title-about {
@@ -721,6 +724,8 @@ body {
             }
         }
         .about-img {
+            flex: 1 1 0;
+
             max-width: 500px;
             width: 100%;
             max-height: 400px;
@@ -731,11 +736,12 @@ body {
 }
 .about-flex {
     display: flex;
-    justify-content: space-between;
     .box-1,
     .box-2,
     .box-3 {
         text-align: center;
+        flex: 1 1 0;
+
         &__title {
             font-size: 3em;
 
@@ -750,5 +756,84 @@ body {
 
             color: $second-color;
         }
+    }
+}
+@media (max-width: 992px) {
+    .about {
+        margin-top: 70px;
+        .about-main-flex {
+            .about-text-block {
+                .about__subtitle {
+                    line-height: 20px;
+                    font-size: 0.7em;
+                }
+                .about-flex {
+                    .box-1,
+                    .box-2,
+                    .box-3 {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .about {
+        margin-top: 50px;
+        .about-main-flex {
+            .about-text-block {
+                .about__subtitle {
+                    margin-top: 20px;
+                    line-height: 15px;
+                    font-size: 0.7em;
+                }
+                .about-flex {
+                    margin-top: 20px;
+
+                    .box-1,
+                    .box-2,
+                    .box-3 {
+                        font-size: 0.6em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .about .about-main-flex {
+        align-items: center;
+        flex-direction: column;
+
+        .about-text-block {
+            .title-about {
+                text-align: center;
+            }
+            .about__subtitle {
+                line-height: 15px;
+                font-size: 0.7em;
+            }
+            .about-flex {
+                .box-1,
+                .box-2,
+                .box-3 {
+                    font-size: 0.6em;
+                }
+            }
+        }
+        .about-img {
+            text-align: center;
+            height: 350px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .about {
+        margin-top: 40px;
+    }
+    .about .about-main-flex .about-img {
+        height: 250px;
+        object-fit: contain;
     }
 }
