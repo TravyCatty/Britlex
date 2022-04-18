@@ -726,4 +726,8 @@ body {
        object-fit: contain;
   }
 }
+
+.price {
+  margin-top: 120px;
+}
 /*# sourceMappingURL=style.css.map */
