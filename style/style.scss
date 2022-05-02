@@ -843,7 +843,6 @@ body {
     margin-top: 120px;
 }
 .price-grid {
-    
     // .price-grid__card
 
     &__card {
@@ -852,7 +851,6 @@ body {
         gap: 2rem;
 
         grid-template-columns: repeat(3, 1fr);
-        
     }
 }
 .flex-card {
@@ -885,7 +883,6 @@ body {
         color: $main-color;
         font-weight: 600;
         margin-bottom: 20px;
-
     }
 
     // .price-card__subtitile
@@ -903,8 +900,8 @@ body {
         background: #eee;
         width: 70%;
         text-align: center;
-        
-        padding: .3em;
+
+        padding: 0.3em;
 
         border-radius: 10px;
     }
