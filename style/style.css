@@ -921,5 +921,67 @@ body {
   background-color: #263238;
   padding: 1rem 2rem;
   border-radius: 10px;
+  font-size: .9rem;
+}
+
+@media (max-width: 992px) {
+  .contact {
+    margin-top: 50px;
+  }
+  .flex-text__title {
+    font-size: 2em;
+  }
+  .flex-text__subtitle {
+    font-size: 0.7rem;
+  }
+  .flex-text__input {
+    max-width: 220px;
+    font-size: 0.8rem;
+  }
+  .flex-text__button {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .flex-text {
+    gap: 15px;
+  }
+  .flex-text__title {
+    font-size: 1.7em;
+  }
+  .flex-text__subtitle {
+    font-size: 0.6rem;
+  }
+  .flex-text__input {
+    max-width: 220px;
+    font-size: 0.8rem;
+    padding: .5rem;
+  }
+  .flex-text__button {
+    font-size: 0.7rem;
+    padding: .5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .contact-flex__img {
+    max-width: 358px;
+  }
+  .flex-text {
+    text-align: center;
+    max-width: 450px;
+  }
+  .flex-text__input {
+    margin-right: 0;
+    max-width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
