@@ -30,7 +30,7 @@ body {
     .burger {
         display: none;
     }
-    
+
     &__list {
         display: flex;
         gap: 2em;
@@ -992,7 +992,6 @@ body {
         border-radius: 10px;
         padding: 1rem;
         margin-right: 5px;
-        
     }
 
     // .flex-text__buttob
@@ -1002,65 +1001,62 @@ body {
         background-color: $main-color;
         padding: 1rem 2rem;
         border-radius: 10px;
-        font-size: .9rem;
-
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 992px) {
-    .contact{
+    .contact {
         margin-top: 50px;
     }
-    .flex-text__title{
+    .flex-text__title {
         font-size: 2em;
     }
-    .flex-text__subtitle{
+    .flex-text__subtitle {
         font-size: 0.7rem;
     }
-    .flex-text__input{
+    .flex-text__input {
         max-width: 220px;
         font-size: 0.8rem;
     }
-    .flex-text__button{
+    .flex-text__button {
         font-size: 0.7rem;
     }
 }
 @media (max-width: 767px) {
-    
-    .flex-text{
+    .flex-text {
         gap: 15px;
     }
-    .flex-text__title{
+    .flex-text__title {
         font-size: 1.7em;
     }
-    .flex-text__subtitle{
+    .flex-text__subtitle {
         font-size: 0.6rem;
     }
-    .flex-text__input{
+    .flex-text__input {
         max-width: 220px;
         font-size: 0.8rem;
-        padding: .5rem;
-        
+        padding: 0.5rem;
     }
-    .flex-text__button{
+    .flex-text__button {
         font-size: 0.7rem;
-        padding: .5rem;
+        padding: 0.5rem;
     }
 }
 
 @media (max-width: 575px) {
-    .contact-flex{
+    .contact-flex {
         flex-direction: column;
         gap: 20px;
     }
-    .contact-flex__img{
+    .contact-flex__img {
         max-width: 358px;
     }
-    .flex-text{
+    .flex-text {
         text-align: center;
         max-width: 450px;
     }
-    .flex-text__input{
+    .flex-text__input {
         margin-right: 0;
         max-width: 200px;
     }
@@ -1074,20 +1070,12 @@ body {
     &__paragraph {
         color: $second-color;
     }
-    
+    margin-bottom: 30px;
+    border-top: 2px solid $second-color;
+    padding-top: 30px;
 }
 .footer__wrapper {
     position: relative;
-    margin-bottom: 30px;
-}
-.footer__wrapper::before {
-    content: '';
-    background-color: $second-color;
-    color: #000;
-    height: 2px;
-    top: -30px;
-    width: 100%;
-    position: absolute;
 }
 
 @media (max-width: 530px) {

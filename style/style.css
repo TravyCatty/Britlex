@@ -922,7 +922,7 @@ body {
   background-color: #263238;
   padding: 1rem 2rem;
   border-radius: 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 992px) {
@@ -957,11 +957,11 @@ body {
   .flex-text__input {
     max-width: 220px;
     font-size: 0.8rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .flex-text__button {
     font-size: 0.7rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 }
 
@@ -997,6 +997,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  margin-bottom: 30px;
+  border-top: 2px solid #8f95a5;
+  padding-top: 30px;
 }
 
 .footer__paragraph {
@@ -1005,17 +1008,6 @@ body {
 
 .footer__wrapper {
   position: relative;
-  margin-bottom: 30px;
-}
-
-.footer__wrapper::before {
-  content: '';
-  background-color: #8f95a5;
-  color: #000;
-  height: 2px;
-  top: -30px;
-  width: 100%;
-  position: absolute;
 }
 
 @media (max-width: 530px) {
