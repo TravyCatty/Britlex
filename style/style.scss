@@ -15,6 +15,13 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+.logo {
+    font-size: 2em;
+    color: #000;
+    &-grey {
+        color: $main-color;
+    }
+}
 //Navigation
 .nav {
     display: flex;
@@ -23,13 +30,7 @@ body {
     .burger {
         display: none;
     }
-    .logo {
-        font-size: 2em;
-        color: #000;
-        &-grey {
-            color: $main-color;
-        }
-    }
+    
     &__list {
         display: flex;
         gap: 2em;
@@ -945,6 +946,7 @@ body {
 
 .contact {
     margin-top: 120px;
+    margin-bottom: 100px;
 }
 .contact-flex {
     display: flex;
@@ -1062,4 +1064,27 @@ body {
         margin-right: 0;
         max-width: 200px;
     }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    &__paragraph {
+        color: $second-color;
+    }
+
+}
+.footer__wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+.footer__wrapper::before {
+    content: '';
+    background-color: $second-color;
+    color: #000;
+    height: 2px;
+    top: -30px;
+    width: 100%;
+    position: absolute;
 }

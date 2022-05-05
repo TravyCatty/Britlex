@@ -17,6 +17,15 @@ body {
   padding: 0 20px;
 }
 
+.logo {
+  font-size: 2em;
+  color: #000;
+}
+
+.logo-grey {
+  color: #263238;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,15 +40,6 @@ body {
 
 .nav .burger {
   display: none;
-}
-
-.nav .logo {
-  font-size: 2em;
-  color: #000;
-}
-
-.nav .logo-grey {
-  color: #263238;
 }
 
 .nav__list {
@@ -868,6 +868,7 @@ body {
 
 .contact {
   margin-top: 120px;
+  margin-bottom: 100px;
 }
 
 .contact-flex {
@@ -983,5 +984,36 @@ body {
     margin-right: 0;
     max-width: 200px;
   }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer__paragraph {
+  color: #8f95a5;
+}
+
+.footer__wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.footer__wrapper::before {
+  content: '';
+  background-color: #8f95a5;
+  color: #000;
+  height: 2px;
+  top: -30px;
+  width: 100%;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
