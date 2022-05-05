@@ -1068,12 +1068,13 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     flex-wrap: wrap;
     text-align: center;
     &__paragraph {
         color: $second-color;
     }
-
+    
 }
 .footer__wrapper {
     position: relative;
@@ -1087,4 +1088,10 @@ body {
     top: -30px;
     width: 100%;
     position: absolute;
+}
+
+@media (max-width: 530px) {
+    .footer {
+        flex-direction: column;
+    }
 }
